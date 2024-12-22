@@ -38,11 +38,11 @@ PapaFilms es una aplicación web que permite a los usuarios explorar una amplia 
    - Haz clic en el ícono de estrella de una película para agregarla o quitarla de tus favoritos.
    - Haz clic en el botón "Favoritos" para ver únicamente las películas marcadas como favoritas.
   
-## Video relacionado
+## Video demostrativo
 
-[![Cartelera de cine con API Imdb](https://youtu.be/wYA3ah_p5ME)
+[![Cartelera de Cine con API IMDb](https://img.youtube.com/vi/wYA3ah_p5ME/hqdefault.jpg)](https://youtu.be/wYA3ah_p5ME)
 
-Haz clic en la imagen para ver el video en YouTube.
+Haz clic en la imagen para ver un video explicativo en YouTube.
 
 
 ## Instalación
