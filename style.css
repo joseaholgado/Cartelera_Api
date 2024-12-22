@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+header{
+    background-color: #F4F1BB;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+.headboard__title{
+    font-family: 'Archivo Black', sans-serif; 
+    font-weight: normal; 
+    color: #ED6A5A;
+    
+}
+
+.headboard__button{
+    background-color: white;
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+button{
+    background-color: #ED6A5A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+
+}
+button:hover{
+    background-color: #F4F1BB;
+    color: #ED6A5A;
+    transition: 0.8s ease;
+}
+
+button:not(hover){
+    
+    transition: 0.8s ease;
+}
+.headboard__search{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.headboard__search-input {
+    width: 200px; 
+    transition: width 0.3s ease; 
+    opacity: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    
+}
+
+.headboard__search-input.expand {
+    width: 500px; 
+    height: 25px;
+
+}
+
+article{
+    width: 100%;
+	max-width: 1100px;
+	margin: 40px auto 100px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+    
+
+}
+.container__card{
+    display:flex;
+    height: 450px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #F4F1BB;
+    background-color: white;
+}
+.container__card  .cards__title{
+    font-size: 16px;
+	font-weight: 600;
+   
+}
+.container .cards{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+   
+}
+
+.container .cards .cards__image{
+    width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+
+
+.container .cards .cards__favorite{
+    color: #ED6A5A;
+    margin-left: 265px;
+    margin-top:10px;
+    cursor: pointer;
+}
+
+
+
+@media  (max-width: 1200px){
+    article{
+        max-width: 800px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media  (max-width: 800px){
+    article{
+        
+        max-width: 500px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 560px){
+    article{
+       
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .cards{
+        width: 80%;
+    }
+}
